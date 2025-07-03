@@ -1,4 +1,4 @@
-let duration = 25 * 60;
+let duration = 20 * 60;
 let timerId;
 const display = document.getElementById("timer");
 
@@ -30,7 +30,7 @@ document.getElementById("pause").addEventListener("click", () => {
 document.getElementById("reset").addEventListener("click", () => {
   clearInterval(timerId);
   timerId = null;
-  duration = 25 * 60;
+  duration = 20 * 60;
   updateDisplay(duration);
 });
 
